@@ -54,7 +54,9 @@ class _AddListPageState extends State<AddListPage> {
                   primary: Colors.grey,
                   onPrimary: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
               ),
             ),
           ],

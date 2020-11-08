@@ -37,11 +37,13 @@ class _ListPageState extends State<ListPage> {
               builder: (context) => AddListPage(),
             ),
           );
-          setState(
-            () {
-              todoList.add(newListText);
-            },
-          );
+          if (newListText != null) {
+            setState(
+              () {
+                todoList.add(newListText);
+              },
+            );
+          }
         },
       ),
     );
